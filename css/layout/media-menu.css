@@ -1,0 +1,310 @@
+@media only screen and (max-width: 1122px) and (min-width:1025px){
+    html{
+        font-size: 16px;
+    }
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-logo{
+        -webkit-box-flex: 7; /* OLD - iOS 6-, Safari 3.1-6 referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex mas acredito que tambem seja pra mozilla velho (ver MDN) */
+        -moz-box-flex: 7; /* OLD - Firefox 19- (buggy but mostly works) apenas se coloca 1 valor. Olha a referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+        -webkit-flex: 7 1 auto; /* NEW - Chrome */
+        -ms-flex: 7 1 auto; /* TWEENER - IE 10 */
+        flex: 7 1 auto; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    }
+    .o-siteNav{
+        -webkit-box-flex: 3; /* OLD - iOS 6-, Safari 3.1-6 referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex mas acredito que tambem seja pra mozilla velho (ver MDN) */
+        -moz-box-flex: 3; /* OLD - Firefox 19- (buggy but mostly works) apenas se coloca 1 valor. Olha a referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+        -webkit-flex: 3 1 auto; /* NEW - Chrome */
+        -ms-flex: 3 1 auto; /* TWEENER - IE 10 */
+        flex: 3 1 auto; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    }
+    .o-navDropDow{
+        -webkit-transition: max-height 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 0s linear 0s;
+        transition: max-height 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 0s linear 0s;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 1024px) and (min-width:801px){
+    html{
+        font-size: 16px;
+    }
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-siteNav{
+        max-width: 640px;
+    }
+    .o-siteNav__li{
+        padding: 0.625rem 0.8rem;
+    }
+    .o-navDropDow{
+        -webkit-transition: max-height 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 0s linear 0s;
+        transition: max-height 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 0s linear 0s;
+    }
+
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 800px) and (min-width:601px){
+    html{
+        font-size: 14px;
+    }
+    /*LAYOUT------------------------------------------------------------------*/
+    .l-siteNav{
+        height: auto;
+        background-color: #fff;
+    }
+    /*------------------------------------------------------------------------*/
+    /*MODULOS-----------------------------------------------------------------*/
+
+    .o-logo{
+        width: 100%;
+        background: #fff url("../../img/logo-branca.png") center no-repeat;
+        background-size: contain;
+        min-height: 60px;
+    }
+    .c-logo--colorful{
+        background: url("../../img/logo.png") center no-repeat;
+        background-size: contain;
+    }
+    .o-siteNav{
+        width: 100%;
+        text-align: left;
+        height: auto;
+        font-size: 1.1rem;
+        border-top: 5px solid #45bbff;
+        padding: 20px;
+        display: none;
+    }
+    .o-siteNav__label{
+        display: inline-block;
+    }
+    .o-siteNav__li{
+        height: auto;
+        display: block;
+        color: #727272;
+        font-weight: normal;
+        margin: 0.5rem 0;
+        padding: 1.25rem 0 1.25rem 1.5625rem;
+        -webkit-transition: color 0.2s ease-out 0s;
+        -moz-transition: color 0.2s ease-out 0s;
+        -o-transition: color 0.2s ease-out 0s;
+        transition: color 0.2s ease-out 0s;
+    }
+    .o-siteNav__li:hover{
+        color: #fff;
+    }
+    .c-navHoverLi:before{
+        height: 3.7rem;
+    }
+    .o-navDropDow{
+        position: relative;
+        top: 8px;
+        left: 0;
+        width: 103%; /*ajuste otico*/
+        margin-left: -1.5625rem;
+        border-top: none;
+        border-bottom: 1px solid #727272;
+        transition: max-height 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    }
+    .o-navDropDow__li{
+        margin: 1.5rem 0;
+    }
+
+
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 600px) and (min-width:481px){
+    html{
+        font-size: 14px;
+    }
+    /*LAYOUT------------------------------------------------------------------*/
+    .l-siteNav{
+        height: auto;
+        background-color: #fff;
+    }
+    /*------------------------------------------------------------------------*/
+    /*MODULOS-----------------------------------------------------------------*/
+
+    .o-logo{
+        width: 100%;
+        background-position: left center;
+        min-height: 60px;
+    }
+    .c-logo--colorful{
+        background: url("../../img/logo.png") center no-repeat;
+        background-size: contain;
+    }
+    .o-siteNav{
+        width: 100%;
+        text-align: left;
+        height: auto;
+        font-size: 1.1rem;
+        border-top: 5px solid #45bbff;
+        padding: 20px;
+        display: none;
+    }
+    .o-siteNav__label{
+        display: inline-block;
+    }
+    .o-siteNav__li{
+        height: auto;
+        display: block;
+        color: #727272;
+        font-weight: normal;
+        margin: 0.5rem 0;
+        padding: 1.25rem 0 1.25rem 1.5625rem;
+        -webkit-transition: color 0.2s ease-out 0s;
+        -moz-transition: color 0.2s ease-out 0s;
+        -o-transition: color 0.2s ease-out 0s;
+        transition: color 0.2s ease-out 0s;
+    }
+    .o-siteNav__li:hover{
+        color: #fff;
+    }
+    .c-navHoverLi:before{
+        height: 3.7rem;
+    }
+    .o-navDropDow{
+        position: relative;
+        top: 8px;
+        left: 0;
+        width: 103%; /*ajuste otico*/
+        margin-left: -1.5625rem;
+        border-top: none;
+        border-bottom: 1px solid #727272;
+        transition: max-height 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    }
+    .o-navDropDow__li{
+        margin: 1.5rem 0;
+    }
+
+
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 480px) and (min-width:401px){
+    html{
+        font-size: 13px;
+    }
+    /*LAYOUT------------------------------------------------------------------*/
+    .l-siteNav{
+        height: auto;
+        background-color: #fff;
+    }
+    /*------------------------------------------------------------------------*/
+    /*MODULOS-----------------------------------------------------------------*/
+
+    .o-logo{
+        width: 100%;
+        background-position: left center;
+        min-height: 60px;
+    }
+    .o-siteNav{
+        width: 100%;
+        text-align: left;
+        height: auto;
+        font-size: 1.1rem;
+        border-top: 5px solid #45bbff;
+        padding: 20px;
+        display: none;
+    }
+    .o-siteNav__label{
+        display: inline-block;
+    }
+    .o-siteNav__li{
+        height: auto;
+        display: block;
+        color: #727272;
+        font-weight: normal;
+        margin: 0.5rem 0;
+        padding: 1.25rem 0 1.25rem 1.5625rem;
+        -webkit-transition: color 0.2s ease-out 0s;
+        -moz-transition: color 0.2s ease-out 0s;
+        -o-transition: color 0.2s ease-out 0s;
+        transition: color 0.2s ease-out 0s;
+    }
+    .o-siteNav__li:hover{
+        color: #fff;
+    }
+    .c-navHoverLi:before{
+        height: 3.7rem;
+    }
+    .o-navDropDow{
+        position: relative;
+        top: 8px;
+        left: 0;
+        width: 103%; /*ajuste otico*/
+        margin-left: -1.5625rem;
+        border-top: none;
+        border-bottom: 1px solid #727272;
+        transition: max-height 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    }
+    .o-navDropDow__li{
+        margin: 1.5rem 0;
+    }
+    .o-slider{
+        min-height: 400px;
+    }
+
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 400px){
+    html{
+        font-size: 9px;
+    }
+    /*LAYOUT------------------------------------------------------------------*/
+    .l-siteNav{
+        height: auto;
+        background-color: #fff;
+    }
+
+    /*------------------------------------------------------------------------*/
+    /*MODULOS-----------------------------------------------------------------*/
+
+    .o-logo{
+        width: 100%;
+        background-position: left center;
+        min-height: 60px;
+    }
+    .o-siteNav{
+        width: 100%;
+        text-align: left;
+        height: auto;
+        font-size: 13.5px;
+        padding: 20px; 
+        border-top: 5px solid #45bbff;
+        display: none;
+    }
+    .o-siteNav__label{
+        display: inline-block;
+    }
+    .o-siteNav__li{
+        height: auto;
+        display: block;
+        color: #727272;
+        font-weight: normal;
+        margin: 2rem 0;
+        padding: 1.25rem 0 1.25rem 1.5625rem;
+        -webkit-transition: color 0.2s ease-out 0s;
+        -moz-transition: color 0.2s ease-out 0s;
+        -o-transition: color 0.2s ease-out 0s;
+        transition: color 0.2s ease-out 0s;
+    }
+    .o-siteNav__li:hover{
+        color: #fff;
+    }
+    .c-navHoverLi:before{
+        height: 4.170rem;
+    }
+    .o-navDropDow{
+        position: relative;
+        top: 8px;
+        left: 0;
+        width: 103%; /*ajuste otico*/
+        margin-left: -1.5625rem;
+        border-top: none;
+        border-bottom: 1px solid #727272;
+        transition: max-height 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    }
+    .o-navDropDow__li{
+        margin: 1.5rem 0;
+    }
+
+    /*------------------------------------------------------------------------*/
+}

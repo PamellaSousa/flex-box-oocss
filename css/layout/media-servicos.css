@@ -1,0 +1,182 @@
+@media only screen and (max-width: 1122px) and (min-width:1025px){
+    html{
+        font-size: 16px;
+    }
+    /*MODULOS-----------------------------------------------------------------*/
+
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 1024px) and (min-width:801px){
+    html{
+        font-size: 14px;
+    }
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-contentTxt{
+        padding: 1.875rem 1.875rem 1.875rem 5.375rem;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 800px) and (min-width:601px){
+    html{
+        font-size: 14px;
+    }
+    /*LAYOUT------------------------------------------------------------------*/
+
+    /*------------------------------------------------------------------------*/
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-contentTxt{
+        min-width: 100%;
+        padding: 1.875rem 1.875rem 1.875rem 5.375rem;
+    }
+    .o-contentTxt__paragraph{
+        font-size: 16px;
+    }
+    .o-showerSec{
+        max-width: 400px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .o-shower__text{
+        font-size: 14px;
+    }
+    .o-modalShower{
+        min-height: 760px;
+    }
+    .o-modalShower__containerTxt{
+        -webkit-box-flex: 6; /* OLD - iOS 6-, Safari 3.1-6 referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex mas acredito que tambem seja pra mozilla velho (ver MDN) */
+        -moz-box-flex: 6; /* OLD - Firefox 19- (buggy but mostly works) apenas se coloca 1 valor. Olha a referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+        -webkit-flex: 6 1 100%; /* NEW - Chrome */
+        -ms-flex: 6 1 100%; /* TWEENER - IE 10 */
+        flex: 6 1 100%; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+        padding: 0 1.875rem 1.875rem 5.375rem;
+    }
+    .u-0paddingRightLeft{
+        padding: 0 !important;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 600px) and (min-width:481px){
+    html{
+        font-size: 14px;
+    }
+    /*LAYOUT------------------------------------------------------------------*/
+
+    /*------------------------------------------------------------------------*/
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-contentTxt{
+        min-width: 100%;
+        padding: 1.875rem 1.875rem 1.875rem 5.375rem;
+    }
+    .o-contentTxt__paragraph{
+        font-size: 14px;
+    }
+    .o-showerSec{
+        max-width: 378px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .o-shower__text{
+        font-size: 14px;
+    }
+    .o-modalShower{
+        min-height: 760px;
+    }
+    .o-modalShower__containerTxt{
+        -webkit-box-flex: 6; /* OLD - iOS 6-, Safari 3.1-6 referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex mas acredito que tambem seja pra mozilla velho (ver MDN) */
+        -moz-box-flex: 6; /* OLD - Firefox 19- (buggy but mostly works) apenas se coloca 1 valor. Olha a referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+        -webkit-flex: 6 1 100%; /* NEW - Chrome */
+        -ms-flex: 6 1 100%; /* TWEENER - IE 10 */
+        flex: 6 1 100%; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        
+        padding: 0 1.875rem 1.875rem 5.375rem;
+    }
+    .u-0paddingRightLeft{
+        padding: 0 !important;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 480px) and (min-width:401px){
+    html{
+        font-size: 13px;
+    }
+    /*LAYOUT------------------------------------------------------------------*/
+
+    /*------------------------------------------------------------------------*/
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-contentTxt{
+        min-width: 100%;
+        padding: 1.875rem 1.875rem 1.875rem 5.375rem;
+    }
+    .o-contentTxt__paragraph{
+        font-size: 14px;
+    }
+    .o-showerSec{
+        max-width: 400px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .o-shower__text{
+        font-size: 13px;
+    }
+    .o-modalShower{
+        min-height: 760px;
+    }
+    .o-modalShower__containerTxt{
+        -webkit-box-flex: 6; /* OLD - iOS 6-, Safari 3.1-6 referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex mas acredito que tambem seja pra mozilla velho (ver MDN) */
+        -moz-box-flex: 6; /* OLD - Firefox 19- (buggy but mostly works) apenas se coloca 1 valor. Olha a referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+        -webkit-flex: 6 1 100%; /* NEW - Chrome */
+        -ms-flex: 6 1 100%; /* TWEENER - IE 10 */
+        flex: 6 1 100%; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        
+        padding: 0 1.875rem 1.875rem 5.375rem;
+    }
+    .u-0paddingRightLeft{
+        padding: 0 !important;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 400px){
+    html{
+        font-size: 9px;
+    }
+    /*LAYOUT------------------------------------------------------------------*/
+
+    /*------------------------------------------------------------------------*/
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-contentTxt{
+        min-width: 100%;
+        padding: 1.875rem 1.875rem 1.875rem 5.375rem;
+    }
+    .o-contentTxt__title{
+        font-size: 26px;
+    }
+    .o-contentTxt__paragraph{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .o-showerSec{
+        max-width: 320px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .o-shower__text{
+        font-size: 13px;
+    }
+    .o-modalShower{
+        min-height: 760px;
+    }
+    .o-modalShower__containerTxt{
+        -webkit-box-flex: 6; /* OLD - iOS 6-, Safari 3.1-6 referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex mas acredito que tambem seja pra mozilla velho (ver MDN) */
+        -moz-box-flex: 6; /* OLD - Firefox 19- (buggy but mostly works) apenas se coloca 1 valor. Olha a referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+        -webkit-flex: 6 1 100%; /* NEW - Chrome */
+        -ms-flex: 6 1 100%; /* TWEENER - IE 10 */
+        flex: 6 1 100%; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        
+        padding: 0 1.875rem 1.875rem 5.375rem;
+    }
+    .u-0paddingRightLeft{
+        padding: 0 !important;
+    }
+    /*------------------------------------------------------------------------*/
+}

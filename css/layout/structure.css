@@ -1,0 +1,166 @@
+/*NAVEGACAO DO SITE-----------------------------------------------------------*/
+.l-siteNav{
+    -webkit-display: -webkit-box;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6  referencia: https://css-tricks.com/using-flexbox mas acredito que tambem seja pra mozilla velho (ver MDN)*/
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) referencia: https://css-tricks.com/using-flexbox (ver MDN)*/
+    display: -ms-flexbox;      /* TWEENER - IE 10 referencia: https://css-tricks.com/using-flexbox */
+    -webkit-display: -webkit-flex;
+    display: -webkit-flex;     /* NEW - Chrome referencia: https://css-tricks.com/using-flexbox e tambem safaris mais novos (ver w3schools)*/
+    display: -moz-flex;        /*caiu de paraquedas, ninguem explica. referencia de uso: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */ 
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ referencia: https://css-tricks.com/using-flexbox */
+
+    -webkit-box-direction: normal;     /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex acredito que isso tambem seja pra safari*/
+    -moz-box-direction: normal;      /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+
+
+    -webkit-flex-direction: row; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-direction: row; /* TWEENER - IE 10 */        
+    flex-direction: row;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */   
+
+
+    -webkit-flex-wrap: wrap; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-wrap: wrap; /* TWEENER - IE 10 */
+    flex-wrap: wrap;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */
+
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+}
+.c-bgSiteNav--1{
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+}
+.l-siteNav > * {
+    -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex mas acredito que tambem seja pra mozilla velho (ver MDN) */
+    -moz-box-flex: 1; /* OLD - Firefox 19- (buggy but mostly works) apenas se coloca 1 valor. Olha a referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+    -webkit-flex: 1 1 auto; /* NEW - Chrome */
+    -ms-flex: 1 1 auto; /* TWEENER - IE 10 */
+    flex: 1 1 auto; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+/*----------------------------------------------------------------------------*/
+/*NOTICIAS--------------------------------------------------------------------*/
+.l-callNotice{
+    width: 100%;
+    min-height: 20%;
+    padding: 20px 0 0;
+}
+.c-bgCallNotice--1{
+    background: url("../../img/call-to-notice-home.png") no-repeat;
+    background-size: cover;
+}
+.c-bgCallNotice--2{
+    background: url("../../img/onepage-call-to-action.png");
+}
+.c-bgCallAction{
+    background: url("../../img/parallax-onepage-2.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 37px;
+}
+.l-callNotice > * {
+    -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex mas acredito que tambem seja pra mozilla velho (ver MDN) */
+    -moz-box-flex: 1; /* OLD - Firefox 19- (buggy but mostly works) apenas se coloca 1 valor. Olha a referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+    -webkit-flex: 1 1 auto; /* NEW - Chrome */
+    -ms-flex: 1 1 auto; /* TWEENER - IE 10 */
+    flex: 1 1 auto; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+/*----------------------------------------------------------------------------*/
+/*CONTEUDO DE TEXTO-----------------------------------------------------------*/
+.l-contentContainer{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6  referencia: https://css-tricks.com/using-flexbox mas acredito que tambem seja pra mozilla velho (ver MDN)*/
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) referencia: https://css-tricks.com/using-flexbox (ver MDN)*/
+    display: -ms-flexbox;      /* TWEENER - IE 10 referencia: https://css-tricks.com/using-flexbox */
+    display: -webkit-flex;     /* NEW - Chrome referencia: https://css-tricks.com/using-flexbox e tambem safaris mais novos (ver w3schools)*/
+    display: -moz-flex;        /*caiu de paraquedas, ninguem explica. referencia de uso: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */ 
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ referencia: https://css-tricks.com/using-flexbox */
+
+
+    -webkit-box-direction: normal;     /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex acredito que isso tambem seja pra safari*/
+    -moz-box-direction: normal;      /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+
+
+    -webkit-flex-direction: row; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-direction: row; /* TWEENER - IE 10 */        
+    flex-direction: row;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */   
+
+
+    -webkit-flex-wrap: wrap; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-wrap: wrap; /* TWEENER - IE 10 */
+    flex-wrap: wrap;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */
+
+    position: relative;
+    top:100px;
+    width: 100%;
+}
+.l-contentContainer > * {
+    -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex mas acredito que tambem seja pra mozilla velho (ver MDN) */
+    -moz-box-flex: 1; /* OLD - Firefox 19- (buggy but mostly works) apenas se coloca 1 valor. Olha a referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+    -webkit-flex: 1 1 auto; /* NEW - Chrome */
+    -ms-flex: 1 1 auto; /* TWEENER - IE 10 */
+    flex: 1 1 auto; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.c-bgContentContainer--1{
+    background-color: #f6f6f8;
+}
+.c-bgContentContainer--white{
+    background: #f6f6f8 url("../../img/bg-white.jpg") no-repeat;
+}
+.c-bgContentContainer--plexus{
+    background: #f6f6f8 url("../../img/bg-plexus.png") no-repeat;
+}
+/*----------------------------------------------------------------------------*/
+/*CALL TO ACTION--------------------------------------------------------------*/
+.l-callAction{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6  referencia: https://css-tricks.com/using-flexbox mas acredito que tambem seja pra mozilla velho (ver MDN)*/
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) referencia: https://css-tricks.com/using-flexbox (ver MDN)*/
+    display: -ms-flexbox;      /* TWEENER - IE 10 referencia: https://css-tricks.com/using-flexbox */
+    display: -webkit-flex;     /* NEW - Chrome referencia: https://css-tricks.com/using-flexbox e tambem safaris mais novos (ver w3schools)*/
+    display: -moz-flex;        /*caiu de paraquedas, ninguem explica. referencia de uso: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */ 
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ referencia: https://css-tricks.com/using-flexbox */
+
+    -webkit-box-direction: normal;     /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex acredito que isso tambem seja pra safari*/
+    -moz-box-direction: normal;      /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+
+
+    -webkit-flex-direction: row; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-direction: row; /* TWEENER - IE 10 */        
+    flex-direction: row;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */   
+
+
+    -webkit-flex-wrap: wrap; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-wrap: wrap; /* TWEENER - IE 10 */
+    flex-wrap: wrap;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */
+
+    -webkit-justify-content: center; /*safari e novo chrome. referencia - w3schools*/
+    -ms-justify-content: center;    /* TWEENER - IE 10 */
+    justify-content: center;    /*Firefox referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+
+    width: 100%;
+    position: relative;
+}
+/*----------------------------------------------------------------------------*/
+/*SERVICOS--------------------------------------------------------------------*/
+.l-contentShower{
+    width: 100%;
+    position: relative;
+}
+/*----------------------------------------------------------------------------*/
+/*FOOTER*/
+.l-footer{
+    width: 100%;
+    position: relative;
+    margin: 100px 0 0;
+}
+.c-bgFooter--1{
+    background-color: #212121;
+}
+/*----------------------------------------------------------------------------*/
+/*PORTFOLIO-------------------------------------------------------------------*/
+.l-portfolio{
+    position: relative;
+    width: 100%;
+}
+.c-bgPortfolio--white{
+    background-color: #fff;
+}
+/*----------------------------------------------------------------------------*/

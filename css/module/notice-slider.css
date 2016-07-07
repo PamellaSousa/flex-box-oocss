@@ -1,0 +1,423 @@
+/*
+    MEU HACK DE SLIDER
+    Created on : 09/03/2016, 11:57:31
+    Author     : pamellasilva
+*/
+.o-noticeSlider{
+    /*width: 640px;*/
+    position: relative;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.o-noticeSliderTxt{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6  referencia: https://css-tricks.com/using-flexbox mas acredito que tambem seja pra mozilla velho (ver MDN)*/
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) referencia: https://css-tricks.com/using-flexbox (ver MDN)*/
+    display: -ms-flexbox;      /* TWEENER - IE 10 referencia: https://css-tricks.com/using-flexbox */
+    display: -webkit-flex;     /* NEW - Chrome referencia: https://css-tricks.com/using-flexbox e tambem safaris mais novos (ver w3schools)*/
+    display: -moz-flex;        /*caiu de paraquedas, ninguem explica. referencia de uso: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */ 
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ referencia: https://css-tricks.com/using-flexbox */
+
+    -webkit-box-direction: normal;     /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex acredito que isso tambem seja pra safari*/
+    -moz-box-direction: normal;      /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+
+    -webkit-flex-direction: row; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-direction: row; /* TWEENER - IE 10 */        
+    flex-direction: row;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */ 
+
+    -webkit-flex-wrap: wrap; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-wrap: wrap; /* TWEENER - IE 10 */
+    flex-wrap: wrap;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */
+
+    -webkit-align-content: center; /*not support on safari (https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-content). Aceito no novo chrome referencia - w3schools*/
+    -ms-align-content: center; /* TWEENER - IE 10 referencia: https://msdn.microsoft.com/pt-br/library/hh673531%28v=vs.85%29.aspx */
+    align-content: center;  /*Firefox referencia: https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-content */
+
+    width: 65%;
+    height: 100%;
+    margin: 0 auto 0 10%;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.o-noticeSliderTxt__title{
+    opacity: 0;
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 0 0 1.125rem 0;
+    text-transform: capitalize;
+    -webkit-animation-name: firulis;
+    animation-name: firulis;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+    -webkit-animation-timing-function:  cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+.o-noticeSliderTxt__subTitle{
+    font-size: 1rem;
+    width: 80%;
+    opacity: 0;
+    -webkit-animation-name: firulis2;
+    animation-name: firulis2;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+    -webkit-animation-timing-function:  cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+.o-noticeSliderBtn{
+    opacity: 0;
+    width: 100%;
+    margin-top: 2.5rem;
+    -webkit-animation-name: firulis3;
+    animation-name: firulis3;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+    -webkit-animation-timing-function:  cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+.o-noticeSliderBtn__qodef-btn {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    box-sizing: initial;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 800;
+    margin-right: 8px;
+    letter-spacing: 1px;
+    line-height: 52px;
+    outline: 0 none;
+    padding: 0 2.1875rem;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: color 0.2s ease-out 0s, background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s;
+    -moz-transition: color 0.2s ease-out 0s, background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s;
+    -o-transition: color 0.2s ease-out 0s, background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s;
+    transition: color 0.2s ease-out 0s, background-color 0.2s ease-out 0s, border-color 0.2s ease-out 0s;
+    overflow: hidden;
+    cursor: pointer;
+    color: #fff;
+}
+.c-qodef-btn-solid {
+    background-color: #45BBFF;
+    border: medium none;
+    color: #fff;
+}
+.c-noticeSliderBtn__qodef-btn--transition:before {
+    border-radius: 50%;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -229%;
+    transform: scale(0);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    z-index: -1;
+}
+.c-borderWhiteHover:hover{
+    border-color: #fff;
+}
+.c-noticeSliderBtn__qodef-btn--transition {
+    transform: translateZ(0px);
+}
+.c-noticeSliderBtn__qodef-btn--transition:hover:before{
+    transform: scale(2.2);
+}
+.c-txtGraphiteTransition:hover{
+    color: #212121;
+}
+.c-bgGraphiteTransition:hover:before{
+    background-color: #212121;
+}
+.c-bgPurpleTransition:hover:before{
+    background-color: #30397E;
+}
+.c-bgWhiteTransition:hover:before{
+    background-color: #fff;
+}
+.c-bgGreenTransition:hover:before{
+    background-color: #45BBFF;
+}
+.o-noticeSlider__img{ 
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: 0;
+    top: 0;
+}
+.c-noticeSlider__img--1{
+    background: url("img/home-main-slide-1.jpg") center no-repeat;
+    background-size: cover;
+}
+.c-noticeSlider__img--2{
+    background: url("img/home-main-slide-2.jpg") center no-repeat;
+    background-size: cover;
+}
+.c-noticeSlider__img--3{
+    background: url("img/home-main-slide-3.jpg") center no-repeat;
+    background-size: cover;
+}
+.c-noticeSlider__img--4{
+    background: url("img/home-main-slide-4.jpg") center no-repeat;
+    background-size: cover;
+}
+.c-noticeSlider__img--5{
+    background: url("http://thecodeplayer.com/uploads/media/8k3N3EL.jpg") center no-repeat;
+    background-size: cover;
+}
+.o-noticeSlider__input{
+    display: none;
+}
+
+input[id="id5"]:checked + div[id="a"]{
+    transform: translateX(0);
+}
+input[id="id5"] + div[id="a"]{
+    transform: translateX(-100%);  
+}
+input[id="id5"]:checked ~  div[id="b"]{
+    transform: translateX(0) !important;
+}
+input[id="id6"]:checked ~ div[id="b"]{
+    transform: translateX(-100%);
+}
+input[id="id6"] ~ div[id="b"]{
+    transform: translateX(-200%);
+}
+input[id="id6"]:checked ~ div[id="c"]{
+    transform: translateX(-100%);
+}
+input[id="id7"]:checked + div[id="c"]{
+    transform: translateX(-200%);
+}
+input[id="id5"]:checked ~ div[id="c"]{
+    transform: translateX(0%);
+}
+input[id="id7"] ~ div[id="c"]{
+    transform: translateX(-300%);
+}
+input[id="id6"]:checked ~ div[id="d"] {
+    transform: translateX(-100%);
+}
+input[id="id5"]:checked ~ div[id="d"] {
+    transform: translateX(0%);
+}
+input[id="id7"]:checked ~ div[id="d"]{
+    transform: translateX(-200%);
+}
+input[id="id8"]:checked ~ div[id="d"]{
+    transform: translateX(-300%);
+}
+input[id="id8"] ~ div[id="d"]{
+    transform: translateX(100%);
+}
+/*LABELS VISIVEIS DO SLIDER---------------------------------------------------*/
+.o-noticeSlider__container-label{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6  referencia: https://css-tricks.com/using-flexbox mas acredito que tambem seja pra mozilla velho (ver MDN)*/
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) referencia: https://css-tricks.com/using-flexbox (ver MDN)*/
+    display: -ms-flexbox;      /* TWEENER - IE 10 referencia: https://css-tricks.com/using-flexbox */
+    display: -webkit-flex;     /* NEW - Chrome referencia: https://css-tricks.com/using-flexbox e tambem safaris mais novos (ver w3schools)*/
+    display: -moz-flex;        /*caiu de paraquedas, ninguem explica. referencia de uso: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */ 
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ referencia: https://css-tricks.com/using-flexbox */
+
+    -webkit-box-direction: normal;     /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex acredito que isso tambem seja pra safari*/
+    -moz-box-direction: normal;      /* Mozilla  referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-box-flex */
+
+
+    -webkit-flex-direction: row; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-direction: row; /* TWEENER - IE 10 */        
+    flex-direction: row;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */   
+
+
+    -webkit-flex-wrap: wrap; /*safari e novo chrome. referencia - w3schools*/
+    -ms-flex-wrap: wrap; /* TWEENER - IE 10 */
+    flex-wrap: wrap;    /* Fireforx referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */
+
+    -webkit-justify-content: center; /*safari e novo chrome. referencia - w3schools*/
+    -ms-justify-content: center;    /* TWEENER - IE 10 */
+    justify-content: center;    /*Firefox referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+
+    -webkit-align-items: center; /*safari e novo chrome. referencia - w3schools*/
+    -ms-align-items: center;    /* TWEENER - IE 10 */
+    align-items: center;    /*Firefox referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items */
+
+    width: 370px;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    height: 35px; 
+    box-sizing: border-box;
+}
+.o-noticeSlider__label{
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    text-indent: -999px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 5px 7px;
+    position: relative;
+    -webkit-transition: background-color 0.2s ease-out 0s;
+    -moz-transition: background-color 0.2s ease-out 0s;
+    -o-transition: background-color 0.2s ease-out 0s;
+    transition: background-color 0.2s ease-out 0s;
+}
+.o-noticeSlider__input[id="id5"]:checked ~ div[class="o-noticeSlider__container-label"] > label[class*="c-noticeSlider__label--thumb5"]{
+    background-color: rgba(255, 255, 255, 1);
+}
+.o-noticeSlider__input[id="id6"]:checked ~ div[class="o-noticeSlider__container-label"] > label[class*="c-noticeSlider__label--thumb6"]{
+    background-color: rgba(255, 255, 255, 1);
+}
+.o-noticeSlider__input[id="id7"]:checked ~ div[class="o-noticeSlider__container-label"] > label[class*="c-noticeSlider__label--thumb7"]{
+    background-color: rgba(255, 255, 255, 1);
+}
+.o-noticeSlider__input[id="id8"]:checked ~ div[class="o-noticeSlider__container-label"] > label[class*="c-noticeSlider__label--thumb8"]{
+    background-color: rgba(255, 255, 255, 1);
+}
+/*----------------------------------------------------------------------------*/
+.noticeSlider-nav-ltr, .noticeSlider-nav-rtl{
+    position: absolute;
+    top: 0;
+}
+.o-noticeSlider__prev, .o-noticeSlider__next{
+    width: 70px;
+    background-color: transparent;   
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+.o-noticeSlider__prev{
+    border-radius: 0 3px 3px 0;
+}
+.o-noticeSlider__next{
+    border-radius: 3px 0 0 3px;
+}
+.noticeSlider-nav-rtl{
+    left: 0;
+}
+.noticeSlider-nav-ltr{
+    right: 0;
+}
+.o-noticeSlider__input:checked + div[id="a"] ~ div[class="noticeSlider-nav-ltr"] > label[for="id6"]{
+    display: block;
+}
+.o-noticeSlider__input:checked + div[id*="b"] ~ div[class="noticeSlider-nav-ltr"] > label[for="id7"]{
+    display: block;
+}
+.o-noticeSlider__input:checked + div[id="c"] ~ div[class="noticeSlider-nav-ltr"] > label[for="id8"]{
+    display: block;
+}
+.o-noticeSlider__input:checked + div[id="d"] ~ div[class="noticeSlider-nav-ltr"] > label[for="id5"]{
+    display: block;
+}
+
+
+.o-noticeSlider__input:checked + div[id="d"] ~ div[class="noticeSlider-nav-rtl"] > label[for="id7"]{
+    display: block;
+}
+.o-noticeSlider__input:checked + div[id="c"] ~ div[class="noticeSlider-nav-rtl"] > label[for="id6"]{
+    display: block;
+}
+.o-noticeSlider__input:checked + div[id="b"] ~ div[class="noticeSlider-nav-rtl"] > label[for="id5"]{
+    display: block;
+}
+.o-noticeSlider__input:checked + div[id="a"] ~ div[class="noticeSlider-nav-rtl"] > label[for="id8"]{
+    display: block;
+}
+@-webkit-keyframes firulis {
+    from {
+        opacity: 0;
+        transform: translateY(12.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes firulis {
+    from {
+        opacity: 0;
+        transform: translateY(12.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes firulis2 {
+    from {
+        opacity: 0;
+        transform: translateY(15.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes firulis2 {
+    from {
+        opacity: 0;
+        transform: translateY(15.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes firulis3 {
+    from {
+        opacity: 0;
+        transform: translateY(15.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes firulis3 {
+    from {
+        opacity: 0;
+        transform: translateY(15.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

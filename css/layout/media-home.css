@@ -1,0 +1,277 @@
+@media only screen and (max-width: 1122px) and (min-width:1025px){
+    html{
+        font-size: 16px;
+    }
+    /*MODULOS-----------------------------------------------------------------*/
+    
+    .o-sliderTxt__title{
+        font-size: 3.5rem;
+    }
+    .o-sliderTxt__subTitle{
+        font-size: 1.3rem;
+    }
+    .o-noticeSliderTxt{
+        width: 60%;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 1024px) and (min-width:801px){
+    html{
+        font-size: 16px;
+    }
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-sliderTxt__title{
+        font-size: 3rem;
+    }
+    .o-sliderTxt__subTitle{
+        font-size: 1.2rem;
+    }
+    .o-noticeSliderTxt{
+        width: 55%;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 800px) and (min-width:601px){
+    html{
+        font-size: 14px;
+    }
+    
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-masterContainer{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .o-sliderTxt {
+        -webkit-align-content: flex-start;
+        -moz-align-content: flex-start;
+        -ms-flex-align: start;
+        align-content: flex-start;
+
+        text-align: center;
+        margin: 0 auto;
+    }
+    .o-sliderTxt__title{
+        width: 100%;
+        margin: 30% 0 2.125rem;
+        font-size: 3.5rem;
+    }
+    .o-sliderTxt__subTitle{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .o-sliderBtn{
+        margin-top: 4rem;
+    }
+    .o-sliderBtn__qodef-btn{
+        font-size: 13px;
+    }
+    .fa-2x{
+        font-size: 1em;
+    }
+    .o-slider__container-label{
+        width: 100%;
+        height: 50px;
+        top: 88%;
+    }
+    .o-noticeSliderTxt{
+        width: 70%;
+        margin: 10px auto 0 10%;
+    }
+    .o-noticeBox__title{
+        font-size: 23px;
+    }
+    .o-noticeBox__p{
+        font-size: 16px;
+    }
+    .o-noticeBtn{
+        position: relative;
+        width: 100%;
+        text-align: left;
+        margin-left: 10%;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 600px) and (min-width:481px){
+    html{
+        font-size: 14px;
+    }
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-masterContainer{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .o-sliderTxt {
+        -webkit-align-content: flex-start;
+        -moz-align-content: flex-start;
+        -ms-flex-align: start;
+        align-content: flex-start;
+
+        text-align: center;
+        margin: 0 auto;
+    }
+    .o-sliderTxt__title{
+        width: 100%;
+        margin: 30% 0 2.125rem;
+        font-size: 3.5rem;
+    }
+    .o-sliderTxt__subTitle{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .o-sliderBtn{
+        margin-top: 4rem;
+    }
+    .o-sliderBtn__qodef-btn{
+        font-size: 13px;
+    }
+    .fa-2x{
+        font-size: 1em;
+    }
+    .o-slider__container-label{
+        width: 100%;
+        height: 50px;
+        top: 88%;
+    }
+    .o-noticeSliderTxt{
+        margin: 10px auto 0 10%;
+    }
+    .o-noticeBox__title{
+        font-size: 23px;
+    }
+    .o-noticeBox__p{
+        font-size: 16px;
+    }
+    .o-noticeBtn{
+        position: relative;
+        width: 100%;
+        text-align: left;
+        margin-left: 10%;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 480px) and (min-width:401px){
+    html{
+        font-size: 13px;
+    }
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-masterContainer{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .o-slider{
+        min-height: 400px;
+    }
+    .o-sliderTxt {
+        -webkit-align-content: flex-start;
+        -moz-align-content: flex-start;
+        -ms-flex-align: start;
+        align-content: flex-start;
+
+        text-align: center;
+        margin: 0 auto;
+    }
+    .o-sliderTxt__title{
+        width: 100%;
+        margin: 20% 0 1rem;
+        font-size: 3rem;
+    }
+    .o-sliderTxt__subTitle{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .o-sliderBtn{
+        margin-top: 3rem;
+    }
+    .o-sliderBtn__qodef-btn{
+        font-size: 12px;
+    }
+    .fa-2x{
+        font-size: 1em;
+    }
+    .o-slider__container-label{
+        width: 100%;
+        height: 50px;
+        top: 88%;
+    }
+    .o-noticeSliderTxt{
+        margin: 10px auto 0 10%;
+    }
+    .o-noticeBox__title{
+        font-size: 21px;
+    }
+    .o-noticeBox__p{
+        font-size: 13.5px;
+    }
+    .o-noticeBtn{
+        position: relative;
+        width: 100%;
+        text-align: left;
+        margin-left: 10%;
+    }
+    /*------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 400px){
+    html{
+        font-size: 9px;
+    }
+    /*MODULOS-----------------------------------------------------------------*/
+    .o-masterContainer{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .o-slider{
+        min-height: 500px;
+    }
+    .o-sliderTxt {
+        -webkit-align-content: flex-start;
+        -moz-align-content: flex-start;
+        -ms-flex-align: start;
+        align-content: flex-start;
+
+        text-align: center;
+        margin: 0 auto;
+    }
+    .o-sliderTxt__title{
+        font-size: 3.5rem;
+        width: 100%;
+        margin: 30% 0 2.125rem;
+    }
+    .o-sliderTxt__subTitle{
+        width: 100%;
+        font-size: 13px;
+    }
+    .o-sliderBtn{
+        margin-top: 4rem;
+    }
+    .o-sliderBtn__qodef-btn{
+        font-size: 10px;
+    }
+    .fa-2x{
+        font-size: 1em;
+    }
+    .o-slider__container-label{
+        width: 100%;
+        height: 50px;
+        top: 88%;
+    }
+    .o-noticeBox__title{
+        font-size: 21px;
+    }
+    .o-noticeSliderTxt{
+        margin: 10px auto 0 18%;
+    }
+    .o-noticeBox__p{
+        font-size: 13.5px;
+    }
+    .o-noticeBtn{
+        position: relative;
+        width: 100%;
+        text-align: left;
+        margin-left: 18%;
+    }
+    .o-noticeSlider__container-label{
+        width: 100%;
+    }
+    /*------------------------------------------------------------------------*/
+}
